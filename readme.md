@@ -14,5 +14,4 @@ After a simple re-ordering, we can draw all sprites with just 2 draw calls:
   <img width="100%" src=".github/images/de-fragmented.gif" alt="Fragmented">
 </p>
 
-
-Warning: the defragmentation script in this project is only meant for demonstration purposes. It is still recommend to manually order your UI eleements to maximize the effeciency of Unity's SRP batcher. You can attach the script and click the "Defragment Atlas" button to automatically re-order UI elements under the same planel, to prioritize batching based on material. Doing so will break the UI layout!
+The defragmentation script in this project is only meant for demonstration purposes. For simpler layouts, you can manually optimize your canvases by consequetively ordering UI elements sharing the same sprite atlas. You can also scale the rect transform of certain elements to avoid tiny pixel overlaps. This can be automated with scripting for more complex layouts.
